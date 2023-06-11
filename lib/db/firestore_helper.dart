@@ -181,8 +181,4 @@ class FirestoreHelper {
       'discount': discount,
     });
   }
-
-  static Future<void> removeCategories(String index) {
-    return _db.collection(_collectionCategory).doc(index).delete();
-  }
 }

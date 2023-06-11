@@ -58,10 +58,6 @@ class ProductProvider extends ChangeNotifier {
     });
   }
 
-  void removeCategories(String index) {
-    FirestoreHelper.removeCategories(index);
-  }
-
   Future<void> insertNewProduct(
       ProductModel productModel, PurchaseModel purchaseModel) {
     return FirestoreHelper.addNewProduct(productModel, purchaseModel);
